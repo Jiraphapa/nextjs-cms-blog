@@ -17,6 +17,13 @@ const PostCard: React.FC<any> = ({post}) => (
                 className="object-top absolute h-80 w-full object-cocver shadow-lg rounded-t-lg lg:rounded-lg"
             />
         </div>
+        <h1 className='transition duration-700 text-center mb-8 cursor-pointer
+            hover:text-pink-600 text-3xl font-semibold
+        '>
+            <Link href={`post/${post.slug}`}>
+                {post.title}
+            </Link>
+        </h1>
     </div>
 )
 
