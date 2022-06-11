@@ -1,7 +1,7 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
-import { PostCard, Categories, PostWidget } from '../component';
+import { PostCard, Categories, PostWidget } from '../components';
 
 const posts = [
   {title: 'React Testing', excerpt: 'Learn React Testing'},
