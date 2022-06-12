@@ -2,7 +2,7 @@ import React, {useContext} from 'react'
 
 import Link from 'next/link';
 
-const categories = [{name: 'React', slug: 'react' }, {name: 'Web Development', slug: 'web-dev'}]
+const categories = [{name: 'Security', slug: 'security' }, {name: 'Web Development', slug: 'web-dev'}, {name: 'AWS', slug: 'aws'}, {name: 'Architecture', slug: 'architecture'}, {name: 'Adventure', slug: 'adventure'}, {name: 'Tech', slug: 'tech'}]
 
 const Header = () => {
   return (
@@ -10,7 +10,7 @@ const Header = () => {
       <div className="border-b w-full inline-block border-blue-400 py-8">
         <div className="md:float-left block">
           <Link href="/">
-            <span className="cursor-pointer font-bold text-4xl text-white">Graph CMS</span>
+            <span className="cursor-pointer font-bold text-4xl text-white">My SandBlog</span>
           </Link>
         </div>
         <div className="hidden md:float-left md:contents">
