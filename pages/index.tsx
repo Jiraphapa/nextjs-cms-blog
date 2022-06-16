@@ -10,6 +10,7 @@ import { getPosts } from '../services';
 // ];
 
 const Home: NextPage = ({ posts }) => {
+  console.log(posts);
   return (
     <div className="container mx-auto px-10 mb-8">
       <Head>
@@ -35,7 +36,6 @@ const Home: NextPage = ({ posts }) => {
 
 export async function getStaticProps() {
   const posts = (await getPosts()) || [];
-
   return {
     props: {posts}
   }

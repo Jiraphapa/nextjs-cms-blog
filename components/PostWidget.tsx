@@ -18,7 +18,7 @@ const PostWidget: React.FC<any> = ({categories, slug}) => {
       .then((result) => setRelatedPosts(result))
     }
   
-    console.log(relatedPosts);
+    //console.log(relatedPosts);
     
   }, [slug])
 
