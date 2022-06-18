@@ -2,11 +2,6 @@ import React from 'react'
 import moment from 'moment'
 import Link from 'next/link'
 
-interface PostProps
-{
-    title: string;
-    excerpt: string;
-}
 
 const PostCard: React.FC<any> = ({post}) => {
     return (
