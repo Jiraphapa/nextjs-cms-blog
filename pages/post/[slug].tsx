@@ -28,10 +28,6 @@ const PostDetails: React.FC<any> = ({ post }) => {
 
 export default PostDetails;
 
-// interface Data {
-//   post: any;
-// }
-
 // Fetch data at build time
 export const getStaticProps: GetStaticProps = async (context)  => {
   //const slug = context.params.slug;
