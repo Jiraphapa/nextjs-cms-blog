@@ -28,13 +28,9 @@ const PostDetails: React.FC<any> = ({ post }) => {
 
 export default PostDetails;
 
-type ContextParams = {
-  slug: string
-}
-
-type PageProps = {
-  blogPost: null 
-}
+// interface Data {
+//   post: any;
+// }
 
 // Fetch data at build time
 export const getStaticProps: GetStaticProps = async (context)  => {

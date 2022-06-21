@@ -39,7 +39,7 @@ export const getPosts = async () => {
 }
 
 
-export const getPostDetails = async (slug: string) => {
+export const getPostDetails = async (slug: any) => {
     const query = gql`
       query GetPostDetails($slug : String!) {
         post(where: {slug: $slug}) {
@@ -95,16 +95,16 @@ export const getRecentPosts = async() => {
 export const getSimilarPosts = async(categories: any, slug: any) => {
     const query = gql `
         query GetPostDetails($slug: String!, $categories: [String!]) {
-            posts (
-                where: {slug_not: $slug, AND [categories_some: {slug_in: $categories}]}
-                last: 3
+            posts(
+            where: {slug_not: $slug, AND: {categories_some: {slug_in: $categories}}}
+            last: 3
             ) {
-                slug
-                createdAt
-                title
-                featuredImage {
-                    url
-                }
+            title
+            featuredImage {
+                url
+            }
+            createdAt
+            slug
             }
         }
     `;
